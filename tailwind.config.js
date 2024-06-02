@@ -38,8 +38,8 @@ module.exports = {
       },
       padding: {
         mobile: "20px",
-        tablet: "48px",
-        desktop: "64px",
+        tablet: "24px",
+        desktop: "48px",
       },
       maxWidth: {
         maxSectionWidth: "1660px",
