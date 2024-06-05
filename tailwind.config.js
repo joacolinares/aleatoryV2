@@ -42,7 +42,7 @@ module.exports = {
         desktop: "48px",
       },
       maxWidth: {
-        maxSectionWidth: "1660px",
+        maxSectionWidth: "1560px",
       },
     },
   },

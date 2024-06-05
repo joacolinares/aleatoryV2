@@ -6,8 +6,8 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="h-[100px] text-white w-full flex justify-center fixed top-0 lg:top-[20px]">
-      <div className="lg:w-[95%] w-full px-mobile sm:px-tablet lg:px-desktop bg-black bg-opacity-70 max-w-maxSectionWidth flex justify-between items-center sectionPaddings">
+    <nav className="h-[100px] text-white w-full flex justify-center fixed top-0 lg:top-[20px] z-50">
+      <div className="lg:w-[95%] w-full paddings bg-black bg-opacity-70 max-w-maxSectionWidth flex justify-between items-center sectionPaddings">
         <Link href="/">
           <Image
             src={logo}
