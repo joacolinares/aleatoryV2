@@ -50,18 +50,18 @@ export default Footer;
 const links = [
   {
     title: "Introduction",
-    href: "/",
+    href: "/#introduction",
   },
   {
     title: "How it works",
-    href: "/",
+    href: "/#how-it-works",
   },
   {
     title: "Tokenomics",
-    href: "/",
+    href: "/#tokenomics",
   },
   {
     title: "Technical innovation",
-    href: "/",
+    href: "/#technical-innovation",
   },
 ];

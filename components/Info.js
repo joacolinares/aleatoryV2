@@ -76,6 +76,9 @@ const Info = () => {
               className="flex flex-col gap-[20px] items-center sm:items-start"
             >
               <motion.div
+                initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ once: true, amount: 0.8 }}
                 variants={items}
                 className="flex flex-col justify-center sm:flex-row items-center gap-2 sm:gap-8"
               >
@@ -88,6 +91,9 @@ const Info = () => {
                 </div>
               </motion.div>
               <motion.div
+                initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ once: true, amount: 0.8 }}
                 variants={items}
                 className="flex flex-col justify-center sm:flex-row items-center gap-2 sm:gap-8"
               >
@@ -100,6 +106,9 @@ const Info = () => {
                 </div>
               </motion.div>
               <motion.div
+                initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ once: true, amount: 0.8 }}
                 variants={items}
                 className="flex flex-col justify-center sm:flex-row items-center gap-2 sm:gap-8"
               >
@@ -115,16 +124,22 @@ const Info = () => {
               </motion.div>
             </motion.div>
             <motion.div
-              variants={cardVariants}
-              className=" text-white bg-white bg-opacity-10 p-3 max-w-[500px] md:text-xl max-md:text-center overflow-hidden"
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.8 }}
             >
-              <p>
-                Aleatory finance has been designed to decentralize one of the
-                oldest and most popular financial instruments:<br></br>
-                <span className="text-[#65BEDA]">Lottery Bonds</span>
-                <br></br>
-                (otherwise known as Premium Bonds).
-              </p>
+              <motion.div
+                variants={cardVariants}
+                className=" text-white bg-white bg-opacity-10 p-3 max-w-[500px] md:text-xl max-md:text-center overflow-hidden"
+              >
+                <p>
+                  Aleatory finance has been designed to decentralize one of the
+                  oldest and most popular financial instruments:<br></br>
+                  <span className="text-[#65BEDA]">Lottery Bonds</span>
+                  <br></br>
+                  (otherwise known as Premium Bonds).
+                </p>
+              </motion.div>
             </motion.div>
           </div>
         </motion.div>

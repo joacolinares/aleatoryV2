@@ -73,34 +73,35 @@ const How = () => {
               HOW IT <br></br>WORKS
             </motion.h1>
           </motion.div>
-          <motion.div
-            initial="offscreen"
-            whileInView="onscreen"
-            viewport={{ once: true, amount: 0.8 }}
-            className="flex flex-wrap justify-around items-center gap-12"
-          >
+          <div className="flex flex-wrap justify-around items-center gap-12">
             <motion.div
-              variants={textVariants}
-              className=" text-white bg-white bg-opacity-10 p-2 sm:p-6 md:text-xl max-md:text-center"
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.8 }}
             >
-              <p>
-                <span className="text-accentLight">Aleatory</span> is a
-                single-asset bond platform, namely{" "}
-                <span className="text-accentLight">$ALEA</span>, our native
-                token. <span className="text-accentLight">$ALEA</span> is native
-                to and tradable on Ethereum but bonds are deployed on Avalanche.{" "}
-                <span className="text-accentLight">$ALEA</span> has officially
-                adopted LayerZero technology to support the cross-chain transfer
-                of our token, so as to achieve maximum cross-chain operability.
-                This enables the token to have access to both the deep liquidity
-                on Ethereum and the low gas fees and GameFi/GambleFi communities
-                on Avalanche.
-              </p>
+              <motion.div
+                variants={textVariants}
+                className=" text-white bg-white bg-opacity-10 p-2 sm:p-6 md:text-xl max-md:text-center"
+              >
+                <p>
+                  <span className="text-accentLight">Aleatory</span> is a
+                  single-asset bond platform, namely{" "}
+                  <span className="text-accentLight">$ALEA</span>, our native
+                  token. <span className="text-accentLight">$ALEA</span> is
+                  native to and tradable on Ethereum but bonds are deployed on
+                  Avalanche. <span className="text-accentLight">$ALEA</span> has
+                  officially adopted LayerZero technology to support the
+                  cross-chain transfer of our token, so as to achieve maximum
+                  cross-chain operability. This enables the token to have access
+                  to both the deep liquidity on Ethereum and the low gas fees
+                  and GameFi/GambleFi communities on Avalanche.
+                </p>
+              </motion.div>
             </motion.div>
             <motion.div variants={imageVariants}>
               <Image src={grafico} alt="Grafico" className="" />
             </motion.div>
-          </motion.div>
+          </div>
         </motion.div>
         <div className="w-full h-full absolute left-0 top-0 z-[-1] flex justify-center">
           <div className="tech1 absolute w-full h-full"></div>

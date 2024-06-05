@@ -61,20 +61,25 @@ const TechInnovation = () => {
             className="flex flex-wrap justify-around items-center gap-12"
           >
             <motion.div
-              variants={contentVariants}
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.8 }}
               className=" text-white bg-white bg-opacity-10 p-2 sm:p-6 text-xl md:text-2xl text-center max-w-[1500px]"
             >
-              <p>
+              <motion.p variants={contentVariants}>
                 Aleatory finance has oficially adopted LayerZero technology to
                 support the cross-chain transfer of our token, so as to achieve
                 maximum cross-chain operability.
-              </p>
+              </motion.p>
             </motion.div>
-            <motion.div
-              variants={contentVariants}
-              className="flex flex-wrap justify-center gap-[20px]"
-            >
-              <div className=" text-white bg-white bg-opacity-30 px-2 py-4 md:text-xl text-center flex flex-col items-center max-w-[350px] rounded-[10px] gap-[15px]">
+            <div className="flex flex-wrap justify-center gap-[20px]">
+              <motion.div
+                initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ once: true, amount: 0.8 }}
+                variants={contentVariants}
+                className=" text-white bg-white bg-opacity-30 px-2 py-4 md:text-xl text-center flex flex-col items-center max-w-[350px] rounded-[10px] gap-[15px]"
+              >
                 <Image src={icon1} alt="Icon" />
                 <p className="text-center">
                   Efficient cross-chain transfer
@@ -85,8 +90,11 @@ const TechInnovation = () => {
                   blockchain to another without complex operations and
                   procedures.
                 </p>
-              </div>
+              </motion.div>
               <motion.div
+                initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ once: true, amount: 0.8 }}
                 variants={contentVariants}
                 className=" text-white bg-white bg-opacity-30 p-2 sm:p-6 md:text-xl text-center flex flex-col items-center max-w-[350px] rounded-[10px] gap-[15px]"
               >
@@ -100,6 +108,9 @@ const TechInnovation = () => {
                 </p>
               </motion.div>
               <motion.div
+                initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ once: true, amount: 0.8 }}
                 variants={contentVariants}
                 className=" text-white bg-white bg-opacity-30 p-2 sm:p-6 md:text-xl text-center flex flex-col items-center max-w-[350px] rounded-[10px] gap-[15px]"
               >
@@ -113,8 +124,11 @@ const TechInnovation = () => {
                   security.
                 </p>
               </motion.div>
-            </motion.div>
+            </div>
             <motion.div
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.8 }}
               variants={contentVariants}
               className=" text-white bg-white bg-opacity-10 p-2 sm:p-6 text-xl md:text-2xl text-center max-w-[1500px] flex flex-col items-center"
             >
