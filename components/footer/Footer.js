@@ -15,7 +15,10 @@ const Footer = () => {
             <h3 className="font-semibold text-2xl">Quick Link</h3>
             <ul className="mt-4 flex flex-col gap-2">
               {links.map((link, i) => (
-                <li key={i}>
+                <li
+                  key={i}
+                  className="hover:text-accentDark transition-all duration-300"
+                >
                   <Link href={link.href}>{link.title}</Link>
                 </li>
               ))}
@@ -23,7 +26,12 @@ const Footer = () => {
           </div>
           <div className="">
             <Link href="#" className="flex flex-col items-center gap-2">
-              <p href="#">Follow us on our socials</p>
+              <p
+                href="#"
+                className="hover:text-accentDark transition-all duration-300"
+              >
+                Follow us on our socials
+              </p>
               <Image src={socialX} alt="X logo" />
             </Link>
           </div>

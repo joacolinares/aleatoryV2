@@ -1,3 +1,20 @@
+"use client";
+import { motion } from "framer-motion";
+
+const cardVariants = {
+  offscreen: {
+    x: -5000,
+  },
+  onscreen: {
+    x: 0,
+    transition: {
+      type: "spring",
+      bounce: 0.2,
+      duration: 1,
+    },
+  },
+};
+
 const Hero = () => {
   return (
     <section className="w-full flex flex-col items-center justify-center">
@@ -9,10 +26,17 @@ const Hero = () => {
             <span className="text-[#D101D5]">·</span>TO
             <span className="text-[#D101D5]">·</span>RY
           </h1>
-          <p className="text-[#D101D5] max-md:text-center sm:text-xl md:text-2xl">
-            adjective- ,&apos;depending on the throw<br></br> of a dice or on
-            chance; random&apos;.
-          </p>
+          <motion.div
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.8 }}
+            className="text-[#D101D5] max-md:text-center sm:text-xl md:text-2xl"
+          >
+            <motion.p variants={cardVariants}>
+              adjective- ,&apos;depending on the throw<br></br> of a dice or on
+              chance; random&apos;.
+            </motion.p>
+          </motion.div>
         </div>
         <div className="w-full absolute left-0 top-0 z-[-1] h-screen flex justify-center">
           <div className="hero1 absolute w-full h-full"></div>

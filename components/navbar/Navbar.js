@@ -12,7 +12,7 @@ const Navbar = () => {
           <Image
             src={logo}
             alt="Logo"
-            className="object-cover max-lg:max-w-[150px] max-md:max-w-[70%]"
+            className="object-cover max-w-[200px] max-lg:max-w-[150px] max-md:max-w-[70%]"
           />
         </Link>
         <DesktopMenu links={links} />
@@ -27,18 +27,18 @@ export default Navbar;
 const links = [
   {
     title: "Introduction",
-    href: "/",
+    href: "/#introduction",
   },
   {
     title: "How it works",
-    href: "/",
+    href: "/#how-it-works",
   },
   {
     title: "Tokenomics",
-    href: "/",
+    href: "/#tokenomics",
   },
   {
     title: "Technical innovation",
-    href: "/",
+    href: "/#technical-innovation",
   },
 ];

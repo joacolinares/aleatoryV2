@@ -10,7 +10,7 @@ const MobileMenu = ({ links }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="md:hidden">
+    <div className="exc:hidden">
       {open ? (
         <IoClose onClick={() => setOpen(!open)} className="text-4xl" />
       ) : (
@@ -27,7 +27,7 @@ const MobileMenu = ({ links }) => {
             <Link
               onClick={() => setOpen(false)}
               href={link.href}
-              className="w-full text-center py-2 bg-[#4C4C4C] bg-opacity-25 rounded-lg hover:bg-accentDark"
+              className="w-full text-center py-2 bg-[#4C4C4C] bg-opacity-25 rounded-lg hover:bg-accentDark transition-all duration-300"
             >
               {link.title}
             </Link>

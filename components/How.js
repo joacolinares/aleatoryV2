@@ -1,17 +1,88 @@
+"use client";
 import Image from "next/image";
-import React from "react";
 import grafico from "@/public/grafico.png";
+import { motion } from "framer-motion";
+
+const titleVariants = {
+  offscreen: {
+    x: -2000,
+  },
+  onscreen: {
+    x: 0,
+    transition: {
+      type: "spring",
+      bounce: 0.2,
+      duration: 1,
+    },
+  },
+};
+
+const imageVariants = {
+  offscreen: {
+    x: 2000,
+  },
+  onscreen: {
+    x: 0,
+    transition: {
+      type: "spring",
+      bounce: 0.2,
+      duration: 1,
+    },
+  },
+};
+
+const textVariants = {
+  offscreen: {
+    y: 2000,
+    opacity: 0,
+  },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.2,
+      duration: 1,
+    },
+  },
+};
 
 const How = () => {
   return (
-    <section className="w-full flex flex-col items-center justify-center">
+    <section
+      id="how-it-works"
+      className="w-full flex flex-col items-center justify-center scroll-mt-[130px]"
+    >
       <div className="flex flex-col w-full relative paddings min-h-screen">
-        <div className="mt-[20px] md:mt-[100px] flex flex-col gap-[70px] md:ml-[50px]">
-          <h1 className="text-white text-4xl sm:text-5xl max-md:text-center ">
-            HOW IT <br></br>WORKS
-          </h1>
-          <div className="flex flex-wrap justify-around items-center gap-12">
-            <div className=" text-white bg-white bg-opacity-10 p-2 sm:p-6 md:text-xl max-md:text-center">
+        <motion.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.8 }}
+          className="mt-[20px] md:mt-[100px] flex flex-col gap-[70px] md:ml-[50px]"
+        >
+          <motion.div
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.8 }}
+            className=" "
+          >
+            <motion.h1
+              variants={titleVariants}
+              className="text-white text-4xl sm:text-5xl max-md:text-center "
+            >
+              HOW IT <br></br>WORKS
+            </motion.h1>
+          </motion.div>
+          <motion.div
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.8 }}
+            className="flex flex-wrap justify-around items-center gap-12"
+          >
+            <motion.div
+              variants={textVariants}
+              className=" text-white bg-white bg-opacity-10 p-2 sm:p-6 md:text-xl max-md:text-center"
+            >
               <p>
                 <span className="text-accentLight">Aleatory</span> is a
                 single-asset bond platform, namely{" "}
@@ -25,10 +96,12 @@ const How = () => {
                 on Ethereum and the low gas fees and GameFi/GambleFi communities
                 on Avalanche.
               </p>
-            </div>
-            <Image src={grafico} alt="Grafico" className="" />
-          </div>
-        </div>
+            </motion.div>
+            <motion.div variants={imageVariants}>
+              <Image src={grafico} alt="Grafico" className="" />
+            </motion.div>
+          </motion.div>
+        </motion.div>
         <div className="w-full h-full absolute left-0 top-0 z-[-1] flex justify-center">
           <div className="tech1 absolute w-full h-full"></div>
           <div className="tech2 absolute w-full h-full"></div>

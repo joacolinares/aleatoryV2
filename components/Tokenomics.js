@@ -1,17 +1,43 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
-import React from "react";
+
+const titleVariants = {
+  offscreen: {
+    x: -2000,
+  },
+  onscreen: {
+    x: 0,
+    transition: {
+      type: "spring",
+      bounce: 0.2,
+      duration: 1,
+    },
+  },
+};
 
 const Tokenomics = () => {
   return (
-    <section className="w-full flex flex-col items-center justify-center">
+    <section
+      id="tokenomics"
+      className="w-full flex flex-col items-center justify-center scroll-mt-[120px]"
+    >
       <div className="flex flex-col w-full relative paddings pb-12 min-h-screen">
-        <div className="mt-[20px] md:mt-[100px] flex flex-col gap-[70px] md:ml-[50px]">
-          <h1 className="text-white text-4xl sm:text-5xl max-md:text-center ">
+        <motion.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.8 }}
+          className="mt-[20px] md:mt-[100px] flex flex-col gap-[70px] md:ml-[50px]"
+        >
+          <motion.h1
+            variants={titleVariants}
+            className="text-white text-4xl sm:text-5xl max-md:text-center "
+          >
             TOKENOMICS
-          </h1>
+          </motion.h1>
 
           <div className=" text-white bg-white bg-opacity-10 p-3 max-w-[1000px] md:text-xl lg:text-2xl max-md:text-center">
-            <p>
+            <motion.p variants={titleVariants}>
               The Aleatory token model has been designed to provide the returns
               of a Lottery Bond whilst still keeping a constant supply.<br></br>
               <br></br> -Initial supply:{" "}
@@ -30,9 +56,9 @@ const Tokenomics = () => {
               -Team Tokens: <span className="text-accentLight">200,000</span>
               <br></br>
               (6 month cliff, 18 month vest) .
-            </p>
+            </motion.p>
           </div>
-        </div>
+        </motion.div>
         <div className="w-full h-full absolute left-0 top-0 z-[-1] flex justify-center">
           <div className="token absolute w-full h-full"></div>
           <div className="bg-black bg-opacity-50 absolute w-full h-full"></div>
