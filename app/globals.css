@@ -10,3 +10,44 @@
    .paddings {
     @apply px-mobile sm:px-tablet lg:px-desktop
    }
+
+   .tech1 {
+      background: #0D0F10;
+      mix-blend-mode: lighten;
+   }
+
+   .tech2 {
+      background: rgba(209, 1, 213, 0.75);
+      mix-blend-mode: hue;
+   }
+
+   .color {
+    fill: var(--Purple-Blue-400, #9C67F4);
+   }
+
+   .how1 {
+      background: linear-gradient(0deg, rgba(209, 1, 213, 0.75) 0%, rgba(209, 1, 213, 0.75) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 100%);
+      background-blend-mode: hue, normal;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   }
+
+   .info1 {
+      opacity: 0.35;
+      background: #000;
+      mix-blend-mode: difference;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.60), 16px 24px 64px -24px rgba(255, 255, 255, 0.08) inset, 0px 24px 24px -16px rgba(0, 0, 0, 0.12), 0px 8px 12px 0px rgba(255, 255, 255, 0.08) inset;
+   }
+
+   .hero1 {
+    background: var(--Glass-Stroke, rgba(255, 255, 255, 0.08));
+   }
+
+   .ge {
+      box-shadow: 16px 24px 64px -24px rgba(255, 255, 255, 0.08) inset, 0px 24px 24px -16px rgba(0, 0, 0, 0.12), 0px 8px 12px 0px rgba(255, 255, 255, 0.08) inset;
+   }
+
+   .token {
+      background: linear-gradient(0deg, rgba(209, 1, 213, 0.70) 0%, rgba(209, 1, 213, 0.70) 100%);
+      mix-blend-mode: overlay;
+      /* background-blend-mode: luminosity; */
+   }

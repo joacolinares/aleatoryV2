@@ -5,8 +5,8 @@ import grafico from "@/public/grafico.png";
 const How = () => {
   return (
     <section className="w-full flex flex-col items-center justify-center">
-      <div className="max-w-maxSectionWidth flex flex-col w-full relative paddings min-h-screen">
-        <div className="mt-[20px] md:mt-[100px] flex flex-col gap-[20px] md:ml-[50px]">
+      <div className="flex flex-col w-full relative paddings min-h-screen">
+        <div className="mt-[20px] md:mt-[100px] flex flex-col gap-[70px] md:ml-[50px]">
           <h1 className="text-white text-4xl sm:text-5xl max-md:text-center ">
             HOW IT <br></br>WORKS
           </h1>
@@ -26,13 +26,14 @@ const How = () => {
                 on Avalanche.
               </p>
             </div>
+            <Image src={grafico} alt="Grafico" className="" />
           </div>
-          <Image src={grafico} alt="Grafico" />
         </div>
         <div className="w-full h-full absolute left-0 top-0 z-[-1] flex justify-center">
-          <div className="bg-black bg-opacity-50 absolute w-full h-full"></div>
-          <div className="absolute left-0 top-0 w-full h-full bg-[#D101D5] bg-opacity-[0.1] z-10"></div>
-          <video loop muted className="h-full object-cover">
+          <div className="tech1 absolute w-full h-full"></div>
+          <div className="tech2 absolute w-full h-full"></div>
+
+          <video loop muted className="h-full w-full object-cover">
             <source src="/backgrounds/how-bg.mp4" type="video/mp4" />
           </video>
         </div>

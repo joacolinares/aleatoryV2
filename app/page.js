@@ -1,6 +1,8 @@
 import Hero from "@/components/Hero";
 import How from "@/components/How";
 import Info from "@/components/Info";
+import TechInnovation from "@/components/TechInnovation";
+import Tokenomics from "@/components/Tokenomics";
 
 export default function Home() {
   return (
@@ -13,6 +15,12 @@ export default function Home() {
       </div>
       <div className="min-h-screen">
         <How />
+      </div>
+      <div className="min-h-screen">
+        <Tokenomics />
+      </div>
+      <div className="min-h-screen">
+        <TechInnovation />
       </div>
     </main>
   );
