@@ -51,7 +51,13 @@ const Tokenomics = () => {
               <br></br>-LBP: <span className="text-accentLight">400,000</span>{" "}
               Treasury- DEX Liquidity Provision, CEX Market Makers, <br></br>
               <br></br>-Protocol Growth:
-              <span className="text-accentLight">400,000 $STOCH</span> <br></br>
+              <span className="text-accentLight">
+                400,000{" "}
+                <span className="text-[#65BEDA] font-semibold underline">
+                  $STOCH
+                </span>
+              </span>{" "}
+              <br></br>
               <br></br>
               -Team Tokens: <span className="text-accentLight">200,000</span>
               <br></br>
@@ -62,6 +68,8 @@ const Tokenomics = () => {
         <div className="w-full h-full absolute left-0 top-0 z-[-1] flex justify-center">
           <div className="token absolute w-full h-full"></div>
           <div className="bg-black bg-opacity-50 absolute w-full h-full"></div>
+          <div className="w-screen h-[200px] bg-gradient-to-b from-[#0e0d10] from-20% to-transparent to-[100%] absolute -top-[10px]" />
+          <div className="w-screen h-[200px] bg-gradient-to-b from-transparent from-0% to-[#0e0d10] to-[70%] absolute bottom-0" />
 
           <video
             autoPlay
