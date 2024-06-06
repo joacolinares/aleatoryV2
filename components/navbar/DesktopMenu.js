@@ -15,10 +15,9 @@ const DesktopMenu = ({ links }) => {
       ))}
       <Link
         href="#"
-        className="text-xs xl:text-base flex items-center gap-[2px] xl:ml-[10px] hover:text-accentLight transition-all duration-300"
+        className="text-xs xl:text-base flex items-center gap-[2px] xl:ml-[10px] hover:text-accentLight transition-all duration-300 border-2 px-2 py-1 hover:border-accentLight"
       >
-        <p href="#">Stay in touch</p>
-        <Image src={socialX} alt="X logo" className="w-[30px]" />
+        <p href="#">Login</p>
       </Link>
     </ul>
   );

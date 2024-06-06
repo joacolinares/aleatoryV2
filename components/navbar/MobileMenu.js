@@ -35,6 +35,12 @@ const MobileMenu = ({ links }) => {
         ))}
         <Link
           href="#"
+          className="w-[90%] text-center py-2 border-2 bg-opacity-25 hover:bg-accentDark transition-all duration-300"
+        >
+          Login
+        </Link>
+        <Link
+          href="#"
           className="text-2xl flex items-center gap-[5px] absolute bottom-12"
         >
           <p>Stay in touch</p>

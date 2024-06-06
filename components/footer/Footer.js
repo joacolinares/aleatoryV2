@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "@/public/logo.png";
 import socialX from "@/public/socialX.png";
+import socialgh from "@/public/socialgh.png";
 
 const Footer = () => {
   return (
@@ -24,15 +25,26 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className="">
+          <div className="flex flex-col items-center gap-2">
+            <p
+              href="#"
+              className="hover:text-accentDark transition-all duration-300"
+            >
+              Follow us on our socials
+            </p>
             <Link href="#" className="flex flex-col items-center gap-2">
-              <p
-                href="#"
-                className="hover:text-accentDark transition-all duration-300"
-              >
-                Follow us on our socials
-              </p>
-              <Image src={socialX} alt="X logo" />
+              <Image
+                src={socialX}
+                alt="X logo"
+                className="w-[40px] object-cover"
+              />
+            </Link>
+            <Link href="#" className="flex flex-col items-center gap-2">
+              <Image
+                src={socialgh}
+                alt="github logo"
+                className="w-[40px] object-cover"
+              />
             </Link>
           </div>
         </div>

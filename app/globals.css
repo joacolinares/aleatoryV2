@@ -49,5 +49,5 @@
    .token {
       background: linear-gradient(0deg, rgba(209, 1, 213, 0.70) 0%, rgba(209, 1, 213, 0.70) 100%);
       mix-blend-mode: overlay;
-      /* background-blend-mode: luminosity; */
+      
    }
