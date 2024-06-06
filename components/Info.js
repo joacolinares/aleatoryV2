@@ -147,7 +147,7 @@ const Info = () => {
           <div className="tech1 absolute w-full h-full"></div>
           <div className="tech2 absolute w-full h-full"></div>
 
-          <video loop muted className="h-full w-full object-cover">
+          <video autoPlay loop muted className="h-full w-full object-cover">
             <source src="/backgrounds/info-bg.mp4" type="video/mp4" />
           </video>
         </div>

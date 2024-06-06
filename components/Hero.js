@@ -44,7 +44,7 @@ const Hero = () => {
           <div className=" tech2 absolute w-full h-full"></div>
 
           {/* <div className="absolute left-0 top-0 w-full h-full bg-[#D101D5] bg-opacity-[0.06] z-10"></div> */}
-          <video loop muted className="h-screen w-screen object-cover">
+          <video autoPlay loop muted className="h-screen w-screen object-cover">
             <source src="/backgrounds/hero-bg.mp4" type="video/mp4" />
           </video>
         </div>
