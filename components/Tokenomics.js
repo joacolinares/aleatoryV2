@@ -63,7 +63,14 @@ const Tokenomics = () => {
           <div className="token absolute w-full h-full"></div>
           <div className="bg-black bg-opacity-50 absolute w-full h-full"></div>
 
-          <video autoPlay loop muted className="h-full w-full object-cover">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            controls={false}
+            className="h-full w-full object-cover"
+          >
             <source src="/backgrounds/tokenomics-bg.mp4" type="video/mp4" />
           </video>
         </div>

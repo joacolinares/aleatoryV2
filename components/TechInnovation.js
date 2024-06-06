@@ -144,7 +144,14 @@ const TechInnovation = () => {
         <div className="w-full h-full absolute left-0 top-0 z-[-1] flex justify-center">
           <div className="tech1 absolute w-full h-full"></div>
           <div className="absolute left-0 top-0 w-full h-full tech2 z-10"></div>
-          <video autoPlay loop muted className="h-full w-full object-cover">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            controls={false}
+            className="h-full w-full object-cover"
+          >
             <source src="/backgrounds/techinnovation-bg.mp4" type="video/mp4" />
           </video>
         </div>

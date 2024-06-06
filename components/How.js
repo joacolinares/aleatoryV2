@@ -107,7 +107,14 @@ const How = () => {
           <div className="tech1 absolute w-full h-full"></div>
           <div className="tech2 absolute w-full h-full"></div>
 
-          <video autoPlay loop muted className="h-full w-full object-cover">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            controls={false}
+            className="h-full w-full object-cover"
+          >
             <source src="/backgrounds/how-bg.mp4" type="video/mp4" />
           </video>
         </div>
