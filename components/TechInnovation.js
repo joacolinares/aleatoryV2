@@ -147,7 +147,6 @@ const TechInnovation = () => {
           <div className="w-screen h-[200px] bg-gradient-to-b from-[#0e0d10] from-20% to-transparent to-[100%] absolute -top-[10px]" />
 
           <video
-            autoPlay
             loop
             muted
             playsInline

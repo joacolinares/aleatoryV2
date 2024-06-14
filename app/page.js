@@ -3,6 +3,7 @@ import How from "@/components/How";
 import Info from "@/components/Info";
 import TechInnovation from "@/components/TechInnovation";
 import Tokenomics from "@/components/Tokenomics";
+import BuySection from "@/components/swapComponents/BuySection";
 
 export default function Home() {
   return (
@@ -18,6 +19,9 @@ export default function Home() {
       </div>
       <div className="min-h-screen">
         <Tokenomics />
+      </div>
+      <div className="min-h-screen">
+        <BuySection />
       </div>
       <div className="min-h-screen">
         <TechInnovation />

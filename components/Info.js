@@ -150,7 +150,6 @@ const Info = () => {
           <div className="w-screen h-[200px] bg-gradient-to-b from-[#0e0d10] from-20% to-transparent to-[100%] absolute -top-[10px]" />
           <div className="w-screen h-[200px] bg-gradient-to-b from-transparent from-0% to-[#0e0d10] to-[70%] absolute bottom-0" />
           <video
-            autoPlay
             loop
             muted
             playsInline

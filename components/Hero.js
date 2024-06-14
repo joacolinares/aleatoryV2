@@ -45,7 +45,6 @@ const Hero = () => {
           <div className="w-screen h-[200px] bg-gradient-to-b from-transparent from-0% to-[#0e0d10] to-[70%] absolute bottom-0" />
           {/* <div className="absolute left-0 top-0 w-full h-full bg-[#D101D5] bg-opacity-[0.06] z-10"></div> */}
           <video
-            autoPlay
             loop
             muted
             playsInline
