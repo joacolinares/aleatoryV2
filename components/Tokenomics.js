@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import fallbackImg from "@/public/backgrounds/fallback-bg/tokenomics.png";
 
 const titleVariants = {
   offscreen: {
@@ -77,10 +78,17 @@ const Tokenomics = () => {
             muted
             playsInline
             controls={false}
-            className="h-full w-full object-cover tech1 tech2"
+            className="h-full w-full object-cover"
           >
             <source src="/backgrounds/tokenomics-dark.mp4" type="video/mp4" />
           </video>
+        </div>
+        <div className="h-screen object-cover z-[-2] absolute top-0 left-0 flex justify-center">
+          <Image
+            src={fallbackImg}
+            alt="Background image"
+            className="h-screen w-screen object-cover z-[-2]"
+          />
         </div>
       </div>
     </section>

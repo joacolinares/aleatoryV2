@@ -5,6 +5,8 @@ import i2 from "@/public/i2.png";
 import i3 from "@/public/i3.png";
 import { motion } from "framer-motion";
 
+import fallbackImg from "@/public/backgrounds/fallback-bg/info.png";
+
 const titleVariants = {
   offscreen: {
     x: -2000,
@@ -156,10 +158,17 @@ const Info = () => {
             muted
             playsInline
             controls={false}
-            className="h-full w-full object-cover tech1 tech2"
+            className="h-full w-full object-cover"
           >
             <source src="/backgrounds/info-dark.mp4" type="video/mp4" />
           </video>
+        </div>
+        <div className="h-screen object-cover z-[-2] absolute top-0 left-0 flex justify-center">
+          <Image
+            src={fallbackImg}
+            alt="Background image"
+            className="h-screen w-screen object-cover z-[-2]"
+          />
         </div>
       </div>
     </section>

@@ -1,4 +1,6 @@
+import Image from "next/image";
 import BuyTable from "./BuyTable";
+import fallbackImg from "@/public/backgrounds/fallback-bg/how.png";
 
 const BuySection = () => {
   return (
@@ -32,7 +34,15 @@ const BuySection = () => {
             className="h-full w-full object-cover"
           >
             <source src="/backgrounds/how-dark.mp4" type="video/mp4" />
+            <Image src={fallbackImg} alt="Background image" />
           </video>
+        </div>
+        <div className="h-screen object-cover z-[-2] absolute top-0 left-0 flex justify-center">
+          <Image
+            src={fallbackImg}
+            alt="Background image"
+            className="h-screen w-screen object-cover z-[-2]"
+          />
         </div>
       </div>
     </section>

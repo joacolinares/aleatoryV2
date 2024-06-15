@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import fallbackImg from "@/public/backgrounds/fallback-bg/how.png";
 import grafico from "@/public/grafico.png";
 import { motion } from "framer-motion";
 
@@ -104,8 +105,6 @@ const How = () => {
           </div>
         </motion.div>
         <div className="w-full h-full absolute left-0 top-0 z-[-1] flex justify-center">
-          {/* <div className="tech1 absolute w-full h-full"></div>
-          <div className="tech2 absolute w-full h-full"></div> */}
           <div className="w-screen h-[200px] bg-gradient-to-b from-[#0e0d10] from-20% to-transparent to-[100%] absolute -top-[10px]" />
           <div className="w-screen h-[200px] bg-gradient-to-b from-transparent from-0% to-[#0e0d10] to-[70%] absolute bottom-0" />
           <video
@@ -114,10 +113,17 @@ const How = () => {
             muted
             playsInline
             controls={false}
-            className="h-full w-full object-cover tech1 tech2"
+            className="h-full w-full object-cover"
           >
             <source src="/backgrounds/how-dark.mp4" type="video/mp4" />
           </video>
+        </div>
+        <div className="h-screen object-cover z-[-2] absolute top-0 left-0 flex justify-center">
+          <Image
+            src={fallbackImg}
+            alt="Background image"
+            className="h-screen w-screen object-cover z-[-2]"
+          />
         </div>
       </div>
     </section>

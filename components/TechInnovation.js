@@ -6,6 +6,7 @@ import icon2 from "@/public/icon2.png";
 import icon3 from "@/public/icon3.png";
 import avalanche from "@/public/avalanche.png";
 import { motion } from "framer-motion";
+import fallbackImg from "@/public/backgrounds/fallback-bg/techinnovation.png";
 
 const titleVariants = {
   offscreen: {
@@ -152,13 +153,20 @@ const TechInnovation = () => {
             muted
             playsInline
             controls={false}
-            className="h-full w-full object-cover tech1 tech2"
+            className="h-full w-full object-cover"
           >
             <source
               src="/backgrounds/techinnovation-dark.mp4"
               type="video/mp4"
             />
           </video>
+        </div>
+        <div className="h-screen object-cover z-[-2] absolute top-0 left-0 flex justify-center">
+          <Image
+            src={fallbackImg}
+            alt="Background image"
+            className="h-screen w-screen object-cover z-[-2]"
+          />
         </div>
       </div>
     </section>
