@@ -27,6 +27,7 @@ const BuySection = () => {
           <div className="w-screen h-[200px] bg-gradient-to-b from-[#0e0d10] from-20% to-transparent to-[100%] absolute -top-[10px]" />
           <div className="w-screen h-[200px] bg-gradient-to-b from-transparent from-0% to-[#0e0d10] to-[70%] absolute bottom-0" />
           <video
+            autoPlay
             loop
             muted
             playsInline
@@ -34,7 +35,6 @@ const BuySection = () => {
             className="h-full w-full object-cover"
           >
             <source src="/backgrounds/how-dark.mp4" type="video/mp4" />
-            <Image src={fallbackImg} alt="Background image" />
           </video>
         </div>
         <div className="h-screen object-cover z-[-2] absolute top-0 left-0 flex justify-center">
