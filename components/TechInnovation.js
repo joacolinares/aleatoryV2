@@ -142,8 +142,8 @@ const TechInnovation = () => {
           </motion.div>
         </div>
         <div className="w-full h-full absolute left-0 top-0 z-[-1] flex justify-center">
-          <div className="tech1 absolute w-full h-full"></div>
-          <div className="tech2 absolute w-full h-full"></div>
+          {/* <div className="tech1 absolute w-full h-full"></div>
+          <div className="tech2 absolute w-full h-full"></div> */}
           <div className="w-screen h-[200px] bg-gradient-to-b from-[#0e0d10] from-20% to-transparent to-[100%] absolute -top-[10px]" />
 
           <video
@@ -152,7 +152,7 @@ const TechInnovation = () => {
             muted
             playsInline
             controls={false}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover tech1 tech2"
           >
             <source
               src="/backgrounds/techinnovation-dark.mp4"

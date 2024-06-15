@@ -146,8 +146,8 @@ const Info = () => {
 
         <div className="w-full h-full absolute left-0 top-0 z-[-1] flex justify-center">
           <div className="w-full h-full bg-black bg-opacity-30 absolute top-0 left-0" />
-          <div className="tech1 absolute w-full h-full"></div>
-          <div className="tech2 absolute w-full h-full"></div>
+          {/* <div className="tech1 absolute w-full h-full"></div>
+          <div className="tech2 absolute w-full h-full"></div> */}
           <div className="w-screen h-[200px] bg-gradient-to-b from-[#0e0d10] from-20% to-transparent to-[100%] absolute -top-[10px]" />
           <div className="w-screen h-[200px] bg-gradient-to-b from-transparent from-0% to-[#0e0d10] to-[70%] absolute bottom-0" />
           <video
@@ -156,7 +156,7 @@ const Info = () => {
             muted
             playsInline
             controls={false}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover tech1 tech2"
           >
             <source src="/backgrounds/info-dark.mp4" type="video/mp4" />
           </video>
