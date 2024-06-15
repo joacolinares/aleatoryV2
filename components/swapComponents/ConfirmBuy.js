@@ -13,7 +13,7 @@ const ConfirmBuy = ({ buyClicked, setBuyClicked, setBought }) => {
     >
       <div className="w-full max-w-[500px] bg-black bg-opacity-70 border border-[#D101D5] flex flex-col items-center gap-[25px] px-4 py-3">
         <p className="text-2xl">Are you sure?</p>
-        <div className="flex flex-col gap-[20px] items-center w-full">
+        <div className="flex flex-col gap-[10px] items-center w-full">
           {/* Este div tiene la cantidad de la criptomoneda elegida a swapear */}
           <div className="bg-[#262626] flex flex-col items-center justify-center gap-[5px] px-4 py-3 w-full">
             <div className="flex items-center gap-[10px]">
@@ -40,6 +40,10 @@ const ConfirmBuy = ({ buyClicked, setBuyClicked, setBought }) => {
               <p>Aleatory</p>
             </div>
             <p>0</p>
+          </div>
+          <div>
+            <p>Fee:</p>
+            <p>Received:</p>
           </div>
         </div>
         <button

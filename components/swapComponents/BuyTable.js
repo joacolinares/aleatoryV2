@@ -10,13 +10,14 @@ import ConfirmBuy from "./ConfirmBuy";
 import TweetPurchase from "./TweetPurchase";
 
 const BuyTable = () => {
-  const [logged, setLogged] = useState(false);
+  const [logged, setLogged] = useState(true);
   const [buyClicked, setBuyClicked] = useState(false);
   const [bought, setBought] = useState(false);
 
   return (
     <div className="w-full relative">
-      <div className="w-full flex flex-col gap-[20px] items-center p-4">
+      <div className="w-full flex flex-col gap-[20px] items-center p-2 sm:p-4">
+        {/* Tabla de informacion sobre aleatory */}
         <ProgressBar />
         <AleatoryPrice />
         <WalletInfo />
@@ -31,11 +32,13 @@ const BuyTable = () => {
         >
           BUY
         </button>
+        {/* Solo aparece cuando se aprieta el boton BUY */}
         <ConfirmBuy
           buyClicked={buyClicked}
           setBuyClicked={setBuyClicked}
           setBought={setBought}
         />
+        {/* Una vez confirmada la compra, aparece este componente */}
         <TweetPurchase bought={bought} setBought={setBought} />
       </div>
       {/* Si no conectaron la wallet o no se loguearon, se muestra esto */}

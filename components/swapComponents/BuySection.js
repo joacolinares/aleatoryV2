@@ -17,7 +17,7 @@ const BuySection = () => {
           </div>
 
           {/* A partir de este div esta todo el contenido de Swap */}
-          <div className=" text-white bg-black bg-opacity-70 p-2 sm:p-6 md:text-xl w-full max-w-[1500px] border border-[#D101D5]">
+          <div className=" text-white bg-black bg-opacity-70 sm:p-6 md:text-xl w-full max-w-[1500px] border border-[#D101D5]">
             <BuyTable />
           </div>
         </div>

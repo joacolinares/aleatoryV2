@@ -6,8 +6,10 @@ const TweetPurchase = ({ bought, setBought }) => {
       } bg-black absolute bg-opacity-80 top-0 left-0 w-full h-full flex justify-center items-center`}
     >
       <div className="w-full max-w-[500px] bg-black bg-opacity-70 border border-[#D101D5] flex flex-col items-center gap-[25px] px-4 py-3 text-center">
-        <p className="text-2xl">Congratulations!</p>
-        <p className="text-xl">Do you want to tweet your purchase?</p>
+        <p className="text-2xl">Congratulations!!!</p>
+        <p className="text-xl">
+          You are ALEA team! Let&apos;s tweet and support
+        </p>
 
         <button
           onClick={() => {
