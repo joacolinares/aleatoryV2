@@ -109,13 +109,14 @@ const How = () => {
           <div className="w-screen h-[200px] bg-gradient-to-b from-[#0e0d10] from-20% to-transparent to-[100%] absolute -top-[10px]" />
           <div className="w-screen h-[200px] bg-gradient-to-b from-transparent from-0% to-[#0e0d10] to-[70%] absolute bottom-0" />
           <video
+            autoPlay
             loop
             muted
             playsInline
             controls={false}
             className="h-full w-full object-cover"
           >
-            <source src="/backgrounds/how-bg.mp4" type="video/mp4" />
+            <source src="/backgrounds/how-dark.mp4" type="video/mp4" />
           </video>
         </div>
       </div>

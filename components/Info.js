@@ -82,7 +82,7 @@ const Info = () => {
                 variants={items}
                 className="flex flex-col justify-center sm:flex-row items-center gap-2 sm:gap-8"
               >
-                <div>
+                <div className="bg-black bg-opacity-80 rounded-full">
                   <Image src={i1} alt="Icon" />
                 </div>
                 <div className="flex flex-col text-white max-sm:text-center">
@@ -97,7 +97,7 @@ const Info = () => {
                 variants={items}
                 className="flex flex-col justify-center sm:flex-row items-center gap-2 sm:gap-8"
               >
-                <div>
+                <div className="bg-black bg-opacity-80 rounded-full">
                   <Image src={i2} alt="Icon" />
                 </div>
                 <div className="flex flex-col text-white max-sm:text-center">
@@ -112,7 +112,7 @@ const Info = () => {
                 variants={items}
                 className="flex flex-col justify-center sm:flex-row items-center gap-2 sm:gap-8"
               >
-                <div>
+                <div className="bg-black bg-opacity-80 rounded-full">
                   <Image src={i3} alt="Icon" className="color" />
                 </div>
                 <div className="flex flex-col text-white max-sm:text-center">
@@ -145,18 +145,20 @@ const Info = () => {
         </motion.div>
 
         <div className="w-full h-full absolute left-0 top-0 z-[-1] flex justify-center">
+          <div className="w-full h-full bg-black bg-opacity-30 absolute top-0 left-0" />
           <div className="tech1 absolute w-full h-full"></div>
           <div className="tech2 absolute w-full h-full"></div>
           <div className="w-screen h-[200px] bg-gradient-to-b from-[#0e0d10] from-20% to-transparent to-[100%] absolute -top-[10px]" />
           <div className="w-screen h-[200px] bg-gradient-to-b from-transparent from-0% to-[#0e0d10] to-[70%] absolute bottom-0" />
           <video
+            autoPlay
             loop
             muted
             playsInline
             controls={false}
             className="h-full w-full object-cover"
           >
-            <source src="/backgrounds/info-bg.mp4" type="video/mp4" />
+            <source src="/backgrounds/info-dark.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
