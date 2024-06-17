@@ -23,7 +23,7 @@ const Tokenomics = () => {
       id="tokenomics"
       className="w-full flex flex-col items-center justify-center scroll-mt-[120px]"
     >
-      <div className="flex flex-col w-full relative paddings pb-12 min-h-screen">
+      <div className="flex flex-col w-full relative paddings pb-2 min-h-screen">
         <motion.div
           initial="offscreen"
           whileInView="onscreen"

@@ -12,17 +12,20 @@ const ProgressBar = () => {
   const isVisible = useIsVisible(ref);
 
   return (
-    <div className="w-full max-w-[1000px] bg-[#262626] overflow-hidden px-4 py-2 h-[40px] flex items-center">
-      <div
-        ref={ref}
-        className={`h-[5px] bg-[#D101D5] relative flex items-center transition-opacity ease-in duration-1000`}
-        style={{
-          width: isVisible ? `${progress}%` : "0%",
-          transition: isVisible ? "width 1s" : "width 0s",
-        }}
-      >
-        <div className="w-[20px] h-[20px] bg-[#D101D5] rounded-full absolute right-0" />
+    <div className="w-full overflow-hidden px-4 py-2 flex flex-col items-center justify-center gap-4 mb-[20px]">
+      <div className="w-full max-w-[1000px] bg-[#262626] overflow-hidden px-4 py-2 h-[40px] flex items-center">
+        <div
+          ref={ref}
+          className={`h-[5px] bg-[#D101D5] relative flex items-center transition-opacity ease-in duration-1000`}
+          style={{
+            width: isVisible ? `${progress}%` : "0%",
+            transition: isVisible ? "width 1s" : "width 0s",
+          }}
+        >
+          <div className="w-[20px] h-[20px] bg-[#D101D5] rounded-full absolute right-0" />
+        </div>
       </div>
+      <p>SUPPLY: 0/9999</p>
     </div>
   );
 };
