@@ -17,7 +17,7 @@ const WalletInfo = () => {
         </div>
 
         <div className="flex items-center gap-[10px]">
-          <p>Saldo:</p>
+          <p>Balance:</p>
           <Image
             src={ethereum}
             alt="Ethereum Logo"
@@ -28,7 +28,7 @@ const WalletInfo = () => {
       </div>
       <div className="bg-[#262626] px-6 py-4 min-w-[200px] flex flex-col gap-[10px]">
         <div className="flex items-center gap-[10px]">
-          <p>Saldo Alea:</p>
+          <p>ALEA Balance:</p>
           <Image
             src={alea}
             alt="Aleatory Logo"

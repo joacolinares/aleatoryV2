@@ -4,7 +4,7 @@ import React from "react";
 import icon1 from "@/public/icon1.png";
 import icon2 from "@/public/icon2.png";
 import icon3 from "@/public/icon3.png";
-import avalanche from "@/public/avalanche.png";
+import arbitrum from "@/public/arbitrum.svg";
 import { motion } from "framer-motion";
 import fallbackImg from "@/public/backgrounds/fallback-bg/techinnovation.png";
 
@@ -138,7 +138,12 @@ const TechInnovation = () => {
                 liquidity provided on Ethereum with the low gas and
                 gamefi/gamblefi communities on
               </p>
-              <Image src={avalanche} alt="Avalanche" />
+              <Image
+                src={arbitrum}
+                alt="Avalanche"
+                width={250}
+                className="object-cover mt-[10px] bg-white p-2 rounded-[15px]"
+              />
             </motion.div>
           </motion.div>
         </div>

@@ -10,7 +10,7 @@ import ConfirmBuy from "./ConfirmBuy";
 import TweetPurchase from "./TweetPurchase";
 
 const BuyTable = () => {
-  const [logged, setLogged] = useState(false);
+  const [logged, setLogged] = useState(true);
   const [buyClicked, setBuyClicked] = useState(false);
   const [bought, setBought] = useState(false);
 
