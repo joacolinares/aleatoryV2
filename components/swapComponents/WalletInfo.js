@@ -2,12 +2,11 @@ import Image from "next/image";
 import trust from "@/public/crypto-logos/trust.png";
 import metamask from "@/public/crypto-logos/metamask.png";
 import coinbase from "@/public/crypto-logos/coinbase.png";
-import ethereum from "@/public/crypto-logos/ethereum.png";
 import alea from "@/public/aleatory-white.png";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { SiFireship } from "react-icons/si";
 
-const WalletInfo = () => {
+const WalletInfo = ({ currencyLogo }) => {
   return (
     <div className="flex flex-wrap justify-center gap-[10px]">
       <div className="bg-[#262626] px-6 py-4 min-w-[200px] flex flex-col gap-[10px]">
@@ -19,7 +18,7 @@ const WalletInfo = () => {
         <div className="flex items-center gap-[10px]">
           <p>Balance:</p>
           <Image
-            src={ethereum}
+            src={currencyLogo}
             alt="Ethereum Logo"
             className="object-cover max-w-[20px]"
           />

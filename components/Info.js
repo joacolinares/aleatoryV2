@@ -120,7 +120,7 @@ const Info = () => {
                 <div className="flex flex-col text-white max-sm:text-center">
                   <p className="text-5xl">1st</p>
                   <p className="text-xl">
-                    DEFI platform to create a lottery bonds
+                    DEFI platform to create lottery bonds
                   </p>
                 </div>
               </motion.div>

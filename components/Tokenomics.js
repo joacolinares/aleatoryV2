@@ -46,22 +46,21 @@ const Tokenomics = () => {
               <br></br>
               -Staking emissions rate:{" "}
               <span className="text-accentLight">10000</span> per week
-              Transaction Fee Burn Mechanism:{" "}
+              <br></br>
+              <br></br>
+              <span className="ml-[14px]">
+                &#x2022; Transaction Fee Burn Mechanism:{" "}
+              </span>
               <span className="text-accentLight">1.5%</span> of each transaction
-              Fjord Foundry <br></br>
-              <br></br>-LBP: <span className="text-accentLight">400,000</span>{" "}
-              Treasury- DEX Liquidity Provision, CEX Market Makers, <br></br>
-              <br></br>-Protocol Growth:
-              <span className="text-accentLight">
-                400,000{" "}
-                <span className="text-[#65BEDA] font-semibold underline">
-                  $STOCH
-                </span>
-              </span>{" "}
               <br></br>
               <br></br>
-              -Team Tokens: <span className="text-accentLight">200,000</span>
+              Fjord Foundry LBP:{" "}
+              <span className="text-accentLight">400,000</span> <br></br>
+              <br></br>Treasury- DEX Liquidity Provision, CEX Market Makers,
+              Protocol Growth:
+              <span className="text-accentLight">400,000 </span> <br></br>
               <br></br>
+              -Team Tokens: <span className="text-accentLight">200,000 </span>
               (6 month cliff, 18 month vest) .
             </motion.p>
           </div>

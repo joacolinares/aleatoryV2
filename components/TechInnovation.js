@@ -68,7 +68,7 @@ const TechInnovation = () => {
               className=" text-white bg-white bg-opacity-10 p-2 sm:p-6 text-xl md:text-2xl text-center max-w-[1500px]"
             >
               <motion.p variants={contentVariants}>
-                Aleatory finance has oficially adopted LayerZero technology to
+                Aleatory finance has officially adopted LayerZero technology to
                 support the cross-chain transfer of our token, so as to achieve
                 maximum cross-chain operability.
               </motion.p>

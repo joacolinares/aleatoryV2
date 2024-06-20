@@ -90,12 +90,12 @@ const How = () => {
                   <span className="text-accentLight">$ALEA</span>, our native
                   token. <span className="text-accentLight">$ALEA</span> is
                   native to and tradable on Ethereum but bonds are deployed on
-                  Avalanche. <span className="text-accentLight">$ALEA</span> has
+                  Arbitrum. <span className="text-accentLight">$ALEA</span> has
                   officially adopted LayerZero technology to support the
                   cross-chain transfer of our token, so as to achieve maximum
                   cross-chain operability. This enables the token to have access
                   to both the deep liquidity on Ethereum and the low gas fees
-                  and GameFi/GambleFi communities on Avalanche.
+                  and GameFi/GambleFi communities on Arbitrum.
                 </p>
               </motion.div>
             </motion.div>

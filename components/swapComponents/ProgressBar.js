@@ -5,7 +5,7 @@ import aleaCoin from "@/public/aleatory-white.png";
 
 const ProgressBar = () => {
   //Esta variable indica el porcentaje de progreso de la barra, que es donde se debe insertar el calculo para saber cuanto falta para completar la tarea
-  const progress = 70;
+  const progress = 10;
 
   //De aca para abajo es logica para la animacion de la barra de progreso
   const ref = useRef();
@@ -25,7 +25,7 @@ const ProgressBar = () => {
           <div className="w-[20px] h-[20px] bg-[#D101D5] rounded-full absolute right-0" />
         </div>
       </div>
-      <p>SUPPLY: 0/9999</p>
+      <p>SUPPLY: 0/1,000,000</p>
     </div>
   );
 };
