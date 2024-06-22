@@ -19,6 +19,7 @@ import Cardano from "@/public/crypto-logos/Cardano.png";
 import BNB from "@/public/crypto-logos/BNB.png";
 import ethereum from "@/public/crypto-logos/ethereum.png";
 import ComingSoon from "./ComingSoon";
+import UserTransactions from "./UserTransactions";
 
 const BuyTable = () => {
   //loggedWallet y loggedX indica si esta logueado con cada uno para poner el borde verde si ya esta logueado con cada uno
@@ -43,6 +44,7 @@ const BuyTable = () => {
           setCurrencyLogo={setCurrencyLogo}
         />
         <WalletInfo currencyLogo={currencyLogo} />
+        <UserTransactions />
         <LastTransactions />
         <InfoCompra
           selectedCurrency={selectedCurrency}
