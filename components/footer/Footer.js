@@ -33,21 +33,33 @@ const Footer = () => {
             >
               Follow us on our socials
             </p>
-            <Link href="#" className="flex flex-col items-center gap-2">
+            <Link
+              href="https://x.com/aleatory_io?t=jXfHpRlWeid08tZoxlVbfg&s=08"
+              target="_blank"
+              className="flex flex-col items-center gap-2"
+            >
               <Image
                 src={socialX}
                 alt="X logo"
                 className="w-[40px] object-cover"
               />
             </Link>
-            <Link href="#" className="flex flex-col items-center gap-2">
+            <Link
+              href="#"
+              target="_blank"
+              className="flex flex-col items-center gap-2"
+            >
               <Image
                 src={socialgh}
                 alt="github logo"
                 className="w-[40px] object-cover"
               />
             </Link>
-            <Link href="#" className="flex flex-col items-center gap-2">
+            <Link
+              href="https://aleatory.gitbook.io/aleatory/"
+              target="_blank"
+              className="flex flex-col items-center gap-2"
+            >
               <Image
                 src={socialgb}
                 alt="github logo"

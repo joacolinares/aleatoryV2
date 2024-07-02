@@ -20,9 +20,9 @@ export default function Home() {
       <div className="min-h-screen">
         <Tokenomics />
       </div>
-      <div className="min-h-screen">
+      {/* <div className="min-h-screen">
         <BuySection />
-      </div>
+      </div> */}
       <div className="min-h-screen">
         <TechInnovation />
       </div>
