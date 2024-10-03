@@ -45,7 +45,7 @@ const Footer = () => {
               />
             </Link>
             <Link
-              href="https://github.com/ivan-barrios/aleatory.git"
+              href="https://github.com/DevAiSolves/aleatory"
               target="_blank"
               className="flex flex-col items-center gap-2"
             >
