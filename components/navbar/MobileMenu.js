@@ -61,24 +61,7 @@ const MobileMenu = ({ links }) => {
           Login
         </Link> */}
 
-        {!isConnected ? (
-          <button
-            href="#"
-            className="w-[90%] text-center py-2 border-2 bg-opacity-25 hover:bg-accentDark transition-all duration-300"
-            onClick={() => handleConnect(connectors[0])}
-          >
-            Login
-          </button>
-        ) : (
-          <button
-            href="#"
-            className="w-[90%] text-center py-2 border-2 bg-opacity-25 hover:bg-accentDark transition-all duration-300"
-            onClick={() => handleDisconnect()}
-          >
-            <p>{`${address.slice(0, 6)}...${address.slice(-6)}`}</p>
-          </button>
-        )}
-
+      
         <Link
           href="#"
           className="text-2xl flex items-center gap-[5px] absolute bottom-12"
