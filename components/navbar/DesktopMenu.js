@@ -44,21 +44,7 @@ const DesktopMenu = ({ links }) => {
         <p href="#">Login</p>
       </Link> */}
 
-      {!isConnected ? (
-        <button
-          className="text-xs xl:text-base flex items-center gap-[2px] xl:ml-[10px] hover:text-accentLight transition-all duration-300 border-2 px-2 py-1 hover:border-accentLight"
-          onClick={() => handleConnect(connectors[0])}
-        >
-          <p>Login</p>
-        </button>
-      ) : (
-        <button
-          className="text-xs xl:text-base flex items-center gap-[2px] xl:ml-[10px] hover:text-accentLight transition-all duration-300 border-2 px-2 py-1 hover:border-accentLight"
-          onClick={() => handleDisconnect()}
-        >
-          <p>{`${address.slice(0, 6)}...${address.slice(-6)}`}</p>
-        </button>
-      )}
+     
 
     </ul>
   );
